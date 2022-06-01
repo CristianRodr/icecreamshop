@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nosifer&family=Roboto:wght@300;400;500;700&display=swap');
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Nosifer', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --height-nav: 70px;
+    --background-color-hero: #fe5c60;
+    --color-text-verdeCielo: #067672;
+    --color-texto-azul: #2446de;
+    --color-texto-blanco: #fff;
+    --color-texto-azulpastel: #13436d;
+}
+
+.container {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* INICIO CABECERA */
+
+.message {
+    height: 30px;
+    text-align: center;
+    background: var(--color-texto-azulpastel);
+    display: flex;
+}
+
+.message__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero__message--tex {
+    font-family: 'Luckiest Guy', cursive;
+    color: var(--background-color-hero);
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.nav__icon {
+    width: 40px;
+    height: 40px;
+    fill: var(--color-texto-blanco);
+}
+
+.nav__logo--name {
+    color: var(--color-texto-blanco);
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: 'Nosifer', cursive;
+}
+
+.nav {
+    background: var(--background-color-hero);
+    height: var(--height-nav);
+    color: var(--color-text-blanco);
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link {
+    color: var(--color-texto-blanco);
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 1em;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 0.1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: all .6s ease;
+}
+
+.nav__link:hover {
+    color: var(--color-texto-azulpastel);
+}
+
+.nav__cta {
+    text-decoration: none;
+    background-color: var(--color-texto-blanco);
+}
+
+
+/* FIN CABECERA */
