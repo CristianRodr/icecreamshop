@@ -7,6 +7,7 @@ html {
 *::after,
 *::before {
     box-sizing: inherit;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -43,6 +44,73 @@ body {
 .hero__container {
     margin: 0 auto;
 }
+
+
+/*-------------------------------------------------------------*/
+
+
+/* INICIO MODAL*/
+
+
+/*-------------------------------------------------------------*/
+
+.modal-container {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 30%;
+    height: 70%;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    transition: transform 1s;
+    transform: translateY(0%);
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+.close {
+    margin: 0;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: var(--background-color-hero);
+    color: #FFE6FA;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.modal-close {
+    transform: translateY(-200%);
+}
+
+
+/*-------------------------------------------------------------*/
+
+
+/* FIN MODAL*/
+
+
+/*-------------------------------------------------------------*/
 
 
 /*-------------------------------------------------------------*/
@@ -121,11 +189,6 @@ body {
 
 .nav__link:hover {
     color: var(--color-texto-azulpastel);
-}
-
-.nav__cta {
-    text-decoration: none;
-    background-color: var(--color-texto-blanco);
 }
 
 .nav__link:last-child {
@@ -221,20 +284,20 @@ body {
 /*-------------------------------------------------------------*/
 
 
-/* INICIO PRODCUTOS */
+/* INICIO SECCION PRODCUTOS */
 
 
 /*-------------------------------------------------------------*/
 
 .products {
-    background: rgb(63, 94, 251);
-    background: radial-gradient(circle, rgba(63, 94, 251, 0.12088585434173671) 0%, rgba(252, 70, 107, 0.06206232492997199) 100%);
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    /* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); */
 }
 
 .products__section {
     text-align: center;
     font-size: 4.0rem;
-    color: var(--background-color-hero);
+    color: var(--color-texto-blanco);
     font-weight: bold;
 }
 
@@ -351,7 +414,150 @@ body {
 /*-------------------------------------------------------------*/
 
 
-/* FIN PRODUCTOS */
+/* FIN SECCION PRODUCTOS */
+
+
+/*-------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------*/
+
+
+/* inicio seccion How it’s made */
+
+
+/*-------------------------------------------------------------*/
+
+.made {
+    background-image: url(../img/imgFondoleche.jpg);
+    background-repeat: no-repeat;
+    background-size: conver;
+    height: 100%;
+    background-position: center top;
+}
+
+.made__article {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 4.0rem;
+    color: var(--background-color-hero);
+    font-weight: bold;
+}
+
+.made__title {
+    margin: 0;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 0px 1px 7px rgba(206, 89, 55, 0.67);
+}
+
+.made__sello {
+    font-family: 'Pacifico', cursive;
+    text-shadow: 0px 1px 7px rgba(206, 89, 55, 0.67);
+}
+
+.made__box {
+    margin-top: 3.8em;
+    width: 50%;
+    height: 600px;
+    float: left;
+    /* border: 2px solid chartreuse; */
+    padding: 0;
+    text-align: justify;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.made__paragraph {
+    margin-bottom: 51px;
+    padding: 10px 40px 2px 40px;
+    margin-bottom: 26px;
+}
+
+.made__subtitle {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.made__cta {
+    border: 4px solid var(--background-color-hero);
+    padding: 10px 20px;
+    background-color: rgb(112, 198, 255);
+    border-radius: 40px;
+    color: var(--background-color-hero);
+    text-decoration: none;
+}
+
+.made__cta:hover {
+    border: 4px solid rgb(112, 198, 255);
+    background-color: var(--background-color-hero);
+    color: rgb(112, 198, 255);
+}
+
+.made_box--img {
+    padding-top: 0;
+}
+
+.made__figure {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.made__img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.made__box--modificador {
+    background-color: #f7a6f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+
+/* --------------box-------------*/
+
+.box {
+    width: 50%;
+    height: 600px;
+    float: left;
+    padding: 0;
+    text-align: justify;
+    font-size: 1.52rem;
+    font-weight: 500;
+}
+
+.box--modificador {
+    display: block;
+    margin: 0 auto;
+    background-color: #5de0f0;
+    text-align: center;
+    padding: 135px 70px;
+}
+
+.made__subtitle--modi {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3.2rem;
+}
+
+.box__paragraph {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+
+/* --------------box-------------*/
+
+
+/*-------------------------------------------------------------*/
+
+
+/* fin seccion How it’s made */
 
 
 /*-------------------------------------------------------------*/

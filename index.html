@@ -38,9 +38,21 @@
                             <a href="#" class="nav__link">Gallery</a>
                             <a href="#" class="nav__link">Customer Reviews</a>
                             <a href="#" class="nav__link">Contacts</a>
-                            <a href="#" class="nav__link">Buy now</a>
+                            <a href="#" class="nav__link nav__link--modal">Buy now</a>
                         </div>
                     </section>
+
+                    <div class="modal-container">
+                        <div class="modal modal-close">
+                            <p class="close">X</p>
+                            <div class="modal-textos">
+                                <h2>Get premium</h2>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
             </div>
 
@@ -49,13 +61,15 @@
                     <div class="hero__texts">
                         <h1 class="hero__title">Ice cream made with passion</h1>
                         <div class="hero__cta">
-                            <a href="#" class="cta">Products</a>
-                            <a href="#" class="cta">How it’s made</a>
+                            <a href="#Products" class="cta">Products</a>
+                            <a href="#How it’s made" class="cta">How it’s made</a>
                         </div>
                     </div>
                 </div>
             </section>
         </header>
+
+        <script src="main.js"></script>
 
         <!-- ---------------------------------------------------->
         <!-- Fin de encabezado HEROHEADER -->
@@ -67,7 +81,7 @@
             <!-- Inicio Product -->
             <!------------------------------------------------------->
 
-            <div class="products">
+            <div class="products" id="Products">
                 <section class="products__section container">
                     <h2 class="products__title">Products</h2>
                     <span class="products__paragraph">100% natural</span>
@@ -78,12 +92,14 @@
                         <img src="img/cardProducOreo.jpg" class="card__img">
                         <h4 class="card__title">Oreo Choux Ice Cream</h4>
                         <div class="overlay">
-                            <p class="card_paragraph">Seguro que conoces las galletas Oreo. Esos pequeños círculos de chocolate que envuelven una deliciosa crema a la vainilla. ¿Quién puede resistirse? Son un vicio tanto solas, como mojadas en leche o incluso se pueden usar en
-                                repostería: como base para una tarta de queso, como cobertura o decoración de pasteles... ¡Y como no! En forma de un helado de Oreo, donde aportan todo el sabor de la galleta a una base bien cremosa y, además, un delicioso
-                                toque crujiente pues le vamos a meter trocitos enteros.
+                            <p class="card_paragraph">
+                                Seguro que conoces las galletas Oreo. Esos pequeños círculos de chocolate que envuelven una deliciosa crema a la vainilla. ¿Quién puede resistirse? Son un vicio tanto solas, como mojadas en leche o incluso se pueden usar en repostería: como base para
+                                una tarta de queso, como cobertura o decoración de pasteles... ¡Y como no! En forma de un helado de Oreo, donde aportan todo el sabor de la galleta a una base bien cremosa y, además, un delicioso toque crujiente pues le
+                                vamos a meter trocitos enteros.
                             </p>
                         </div>
-                        <p class="card_paragraph">Galletas oreo son las mejores galletas en la tierra. La mejor parte acerca de estas galletas es que usted no sólo disfrute de un número de crema rica.
+                        <p class="card_paragraph">
+                            Galletas oreo son las mejores galletas en la tierra. La mejor parte acerca de estas galletas es que usted no sólo disfrute de un número de crema rica.
                         </p>
                     </div>
 
@@ -91,9 +107,10 @@
                         <img src="img/cardProducCafe.jpg" class="card__img">
                         <h4 class="card__title">Cafe Choux Ice Cream</h4>
                         <div class="overlay">
-                            <p p class="card_paragraph"> El helado de café es uno de los favoritos de muchos de mis amigos y familiares y fueron ellos los que me pidieron que lo hiciera. A mí el helado de café me gusta, no voy a mentir, pero no es mi favorito. Si me seguís desde
-                                hace tiempo sabréis que el mío es Stracciatella... bueno, y también me encanta el helado de turrón, como este casero que hice hace poco. El sabor del café me gusta en postres, como el flan de café, pero no me considero
-                                un gran "cafetero", como dicen muchos y nunca es el sabor que primero se me viene a la mente cuando me piden uno favorito.
+                            <p p class="card_paragraph">
+                                El helado de café es uno de los favoritos de muchos de mis amigos y familiares y fueron ellos los que me pidieron que lo hiciera. A mí el helado de café me gusta, no voy a mentir, pero no es mi favorito. Si me seguís desde hace tiempo sabréis que el mío
+                                es Stracciatella... bueno, y también me encanta el helado de turrón, como este casero que hice hace poco. El sabor del café me gusta en postres, como el flan de café, pero no me considero un gran "cafetero", como dicen
+                                muchos y nunca es el sabor que primero se me viene a la mente cuando me piden uno favorito.
                             </p>
                         </div>
                         <p class="card_paragraph">El mejor helado sin un fabricante! Café con sabor de helado pintados con mini chips de chocolate es ideal para una tarde de verano me recogiera.</p>
@@ -103,12 +120,14 @@
                         <img src="img/cardProducChocolate.jpg" class="card__img">
                         <h4 class="card__title">Chocolate Choux Ice Cream</h4>
                         <div class="overlay">
-                            <p class="card_paragraph">Una de las peculiaridades a la hora de hacer helado de chocolate es que este ingrediente eleva el punto de congelación de nuestro helado. ¿Qué significa esto? Que el helado de chocolate tiende a congelarse mucho y a quedar
-                                muy duro. Y aquí se nos presenta el gran reto de cómo conseguir un helado de chocolate casero cremoso. El reto se hace mayor cuando queremos hacerlo más saludable y reducir la cantidad de azúcar y la cantidad de grasa de
-                                nuestro helado. Tenemos que conseguir una mezcla equilibrada, pues tanto el azúcar como las grasas ayudan a que el helado no se nos congele tanto y nos quede cremoso y suave.
+                            <p class="card_paragraph">
+                                Una de las peculiaridades a la hora de hacer helado de chocolate es que este ingrediente eleva el punto de congelación de nuestro helado. ¿Qué significa esto? Que el helado de chocolate tiende a congelarse mucho y a quedar muy duro. Y aquí se nos presenta
+                                el gran reto de cómo conseguir un helado de chocolate casero cremoso. El reto se hace mayor cuando queremos hacerlo más saludable y reducir la cantidad de azúcar y la cantidad de grasa de nuestro helado. Tenemos que conseguir
+                                una mezcla equilibrada, pues tanto el azúcar como las grasas ayudan a que el helado no se nos congele tanto y nos quede cremoso y suave.
                             </p>
                         </div>
-                        <p class="card_paragraph">con el Doble de Helado de Chocolate. El último ice cream sandwich - casero, rico helado de chocolate está encajonado por dos ligero y crujiente de chocolate choux.
+                        <p class="card_paragraph">
+                            con el Doble de Helado de Chocolate. El último ice cream sandwich - casero, rico helado de chocolate está encajonado por dos ligero y crujiente de chocolate choux.
                         </p>
                     </div>
                 </section>
@@ -119,10 +138,13 @@
                         <img src="img/cardProducFresa.jpg" class="card__img">
                         <h4 class="card__title">Fresa Choux Ice Cream</h4>
                         <div class="overlay">
-                            <p class="card_paragraph">lo más sencillo es lo que más nos gusta, como este helado de fresas en el que apenas incluimos ingredientes: unas fresas maduras, un poco de azúcar, leche, nata y el toque cítrico del zumo de limón. Sencillo, suave y delicioso.
-                                Lo preparamos con una heladera aunque también se puede hacer en el congelador, mezclándolo con un tenedor cada media hora para que no se formen cristales de hielo.</p>
+                            <p class="card_paragraph">
+                                lo más sencillo es lo que más nos gusta, como este helado de fresas en el que apenas incluimos ingredientes: unas fresas maduras, un poco de azúcar, leche, nata y el toque cítrico del zumo de limón. Sencillo, suave y delicioso. Lo preparamos con una heladera
+                                aunque también se puede hacer en el congelador, mezclándolo con un tenedor cada media hora para que no se formen cristales de hielo.
+                            </p>
                         </div>
-                        <p class="card_paragraph">Esto realmente es El Mejor Helado de Fresa Receta alrededor. Es super cremoso y tiene un montón de fresco sabor a fresa. Lo que lo hace el mejor helado de fresa
+                        <p class="card_paragraph">
+                            Esto realmente es El Mejor Helado de Fresa Receta alrededor. Es super cremoso y tiene un montón de fresco sabor a fresa. Lo que lo hace el mejor helado de fresa
                         </p>
                     </div>
 
@@ -131,18 +153,24 @@
                         <img src="img/cardProducMango.jpg" class="card__img">
                         <h4 class="card__title">Mango Choux Ice Cream</h4>
                         <div class="overlay">
-                            <p class="card_paragraph">El mango es una fruta tropical que cada vez se vuelve más popular, llena de vitamina C, fibra y betacarotenos. Su sabor y su textura la hacen ideal para acompañar ensaladas e incluso platos salados. Esta fruta veraniega es
-                                muy apreciada, además, por su agradable textura y su perfecto balance entre lo dulce y lo ácido.</p>
+                            <p class="card_paragraph">
+                                El mango es una fruta tropical que cada vez se vuelve más popular, llena de vitamina C, fibra y betacarotenos. Su sabor y su textura la hacen ideal para acompañar ensaladas e incluso platos salados. Esta fruta veraniega es muy apreciada, además, por su
+                                agradable textura y su perfecto balance entre lo dulce y lo ácido.
+                            </p>
                         </div>
-                        <p class="card_paragraph">Este cremoso Helado Vegano de Mango tiene solo tres ingredientes y no tiene azúcares añadidos. Es perfectamente rico, cremoso y tan delicioso.</p>
+                        <p class="card_paragraph">
+                            Este cremoso Helado Vegano de Mango tiene solo tres ingredientes y no tiene azúcares añadidos. Es perfectamente rico, cremoso y tan delicioso.
+                        </p>
                     </div>
 
                     <div class="card">
                         <img src="img/cardProducVainilla.jpg" class="card__img">
                         <h4 class="card__title">vainilla Choux Ice Cream</h4>
                         <div class="overlay">
-                            <p class="card_paragraph">El mejor helado sin un fabricante! Café con sabor de helado pintados con mini chips de chocolate es ideal para una tarde de verano me recogiera, De vez en cuando merecemos darnos un capricho y siempre es más satisfactorio cuando
-                                lo hacemos nosotros mismos. Este es el caso de esta cremosa receta de helado de vainilla casero, sin colorantes ni conservantes, un dulce casero lleno de sabor y perfecto para disfrutar en las tardes o después del almuerzo.</p>
+                            <p class="card_paragraph">
+                                El mejor helado sin un fabricante! Café con sabor de helado pintados con mini chips de chocolate es ideal para una tarde de verano me recogiera, De vez en cuando merecemos darnos un capricho y siempre es más satisfactorio cuando lo hacemos nosotros mismos.
+                                Este es el caso de esta cremosa receta de helado de vainilla casero, sin colorantes ni conservantes, un dulce casero lleno de sabor y perfecto para disfrutar en las tardes o después del almuerzo.
+                            </p>
                         </div>
                         <p class="card_paragraph">Helado de Vainilla casero sin un fabricante de helados y no de leche condensada, una indulgente delicia de verano, es vibrante y refrescante</p>
                     </div>
@@ -151,6 +179,52 @@
 
             <!------------------------------------------------------->
             <!-- FIn Product -->
+            <!------------------------------------------------------->
+
+            <!------------------------------------------------------->
+            <!-- Inicio How it’s made -->
+            <!------------------------------------------------------->
+
+            <section class="made" id="How it’s made">
+                <div class="made__container container">
+                    <article class="made__article">
+                        <h2 class="made__title">how it’s made?</h2>
+                        <span class="made__sello">tradition and love</span>
+                    </article>
+                    <div class="made__box made__box--modificador">
+                        <h4 class="made__subtitle">Hecho para ti</h4>
+                        <p class="made__paragraph">
+                            ¿Te gusta el sonido del helado en sabores que incluyen mantequilla de nuez, brownie de dulce de azúcar, chocolate amargo y espresso? Entonces debes visitar Ice Cream. <br><br> A medida que el clima se calienta, no hay mejor
+                            manera de celebrar el verano que con un gran cono de helado. De alguna manera, nada dice "¡Verano!" como el helado, un placer que nos encanta ver disfrutar a nuestros hijos y que nunca se vuelve aburrido o viejo puesto que
+                            este delicioso postre contiene una importante fuente de calcio que nos aporta energía, fortalece nuestros huesos y previene las caries, El helado contiene un alto contenido de proteínas y es rico en aminoácidos esenciales para
+                            beneficio de los niños, jóvenes, adultos y ancianos, <br><br> Este flan sedoso, delicioso y muy clásico tiene sabores de ensueño. Las proporciones particulares de leche y crema a yema de huevo le dan al helado una contextura
+                            espesa pero no pegajosa que se siente decadente pero no pesado. Para algo un poco más ligero, se usa más leche y menos crema, siempre que los lácteos sumen 3 tazas. Se reduce las yemas de huevo para una base más delgada. <br><br>                            Sabores como brownie contienen fudge brownies horneados desde cero, la chispa de chocolate contiene remolinos de chocolate negro derretido y las nueces para mantequilla de nuez están recién tostadas. Para la mayor cantidad
+                            posible de sus ingredientes, Ice cream se asocia con agricultores locales y tostadores de café. <br><br> Un delicioso cono te aportará sensaciones de placer, felicidad y motivación.
+                        </p>
+                        <a href="#" class="made__cta">Read more</a>
+                    </div>
+                    <div class="made__box made_box--img">
+                        <figure class="made__figure"><img src="img\imgVacaCuatro.png" class="made__img"></figure>
+                    </div>
+
+                    <!------------------------------------------------------->
+
+                    <div class="box">
+                        <figure class="made__figure"><img src="img\imgVacaDos.png" class="made__img"></figure>
+                    </div>
+
+                    <div class="box box--modificador">
+                        <h4 class="made__subtitle--modi">SÓLO INGREDIENTES EXTRAORDINARIOS PARA UN SABOR ÚNICO</h4>
+                        <p class="box__paragraph">
+                            Cada cucharada de nuestro helado inicia con cuatro ingredientes -crema, leche, azúcar y huevos. A eso agregamos después el toque que nos hace extraordinarios.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!------------------------------------------------------->
+            <!-- Fin How it’s made -->
             <!------------------------------------------------------->
 
 
