@@ -360,7 +360,8 @@ body {
 /*-------------------------------------------------------------*/
 
 .products {
-    background-color: #a5ffd6;
+    background-color: #ffffff;
+    background-image: linear-gradient(90deg, #ffffff 0%, #a3fff6 100%);
 }
 
 .products__section {
@@ -521,7 +522,7 @@ body {
 /*-------------------------------------------------------------*/
 
 .made {
-    background-image: url(../img/imgFondoLecheUno.jpg);
+    background-image: url(../img/imgFondolecheCinco.png);
     background-size: cover;
     height: 100%;
     background-position: center top;
@@ -649,7 +650,7 @@ body {
 
 @media (max-width: 941px) {
     .made {
-        background-image: url(../img/imgFondoleche.jpg);
+        background-image: url(../img/imgFondolecheTres.png);
         background-size: cover;
         height: 100%;
         background-position: center top;
