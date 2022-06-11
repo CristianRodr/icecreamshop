@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nosifer&family=Pacifico&family=Roboto:wght@300;400;500;700&display=swap');
+
+/*Master CSS */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*--------------------------------------*/
+
+html,
+body {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+body {
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Nosifer', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --height-nav: 70px;
+    --background-color-hero: #fe5c60;
+    --color-text-verdeCielo: #067672;
+    --color-texto-azul: #2446de;
+    --color-texto-blanco: #fff;
+    --color-texto-azulpastel: #13436d;
+}
+
+
+
+
+/*master CSS ends*/
+
+
+/*advantages*/
+
+.advantages__grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.advantages__grid__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.advantages__grid__row__item{
+    width: 30rem;
+    height: 30rem;
+    border: #fe5c60;
+}
+.advantages__grid__row .ar1 {
+    color: #13436d;
+}
+
+ .advantages__grid__row .ar2 {
+    color: #fe5c60;
+}
+
+ .advantages__grid__row .ar3 {
+    color: aqua;
+}
+
+/*advantages ends*/
+
+
+/*Gallery*/
+.gallery {
+    background: rgb(104, 6, 118);
+    background: linear-gradient(309deg, rgba(104, 6, 118, 0.38699229691876746) 40%, rgba(254, 187, 92, 0.7791491596638656) 100%);
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.gallery__title{
+    margin-bottom: 1.2rem;
+    margin-top: 3.5rem;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 0px 1px 7px rgba(104, 6, 118, 0.38699229691876746) 20%;
+    font-size: 8.0rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    }
+
+.gallery__grid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery__grid__row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.gallery__grid__row__item {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    border-radius: 1.5rem;
+}
+/*------Gallery ends------*/
+/*------ Reviews--------*/
+.review__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.review__title{
+     margin-bottom: 1.2rem;
+     margin-top: 3.5rem;
+     font-family: 'Luckiest Guy', cursive;
+     text-shadow: 0px 1px 7px rgba(104, 6, 118, 0.38699229691876746) 80%;
+     font-size: 8.0rem;
+     display: flex;
+     justify-content: center;
+     color: var(--color-text-verdeCielo);
+
+}
+
+.review .review__box .review__slide{
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem #3337;
+    width: 50rem;
+    height: 45rem;
+    padding: 2rem;
+    margin: 1rem;
+    margin-top: 5rem;
+    position: relative;
+    transform-style: preserve-3d;
+    
+
+
+}
+.review .review__box .review__slide .slide__icon{
+    position: absolute;
+    width: 15rem;
+    height: 20rem;
+    top: 1rem; right: 3.5rem;
+    font-size: 9rem;
+    fill:var(--background-color-hero);
+}
+
+.review .review__box .review__slide .review__slide__user .review__slide__user__pic{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+
+}
+.review__slide__user__info__name{
+   color: var(--color-texto-azulpastel);
+   font-size: 3.0rem; 
+   font-family: 'Pacifico', italic;
+}
+.review__slide__stars{
+    color: var(--color-texto-azul);
+    font-size: 1.5rem;
+}
+.review__slide__user__text{
+    color:var(--color-texto-azulpastel);
+    font-size: 2.4rem;
+    padding-top: .5rem;
+    font-style: oblique;
+    font-family: 'Roboto', italic;
+    
+}
+.review .container.review__box.review__slide{
+    display: none;
+}
+.review .container.review__box .review__slide .active{
+    display: block;
+}
+.review  #next,
+.review  #prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: #a8edea;
+    color: #fe5c60;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 5rem 10 rem #13436d;
+
+}
+.review #next{
+right: 30rem;
+top: 125rem;
+}
+.review #prev{
+left: 30rem;
+top: 125rem;
+}
+.review #next:hover
+.review #prev:hover{
+    background: var(--background-color-hero);
+    color: #a8edea;
+}
+/*-------Reviews ends----*/
