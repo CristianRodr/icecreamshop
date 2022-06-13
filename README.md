@@ -1,2 +1,0 @@
-# icecreamshop
-proyecto(HTML+CSS)
