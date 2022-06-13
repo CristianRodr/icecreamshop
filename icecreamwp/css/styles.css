@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nosifer&family=Pacifico&family=Roboto:wght@300;400;500;700&display=swap');
+
+/*Master CSS */
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Nosifer', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --height-nav: 70px;
+    --background-color-hero: #fe5c60;
+    --color-text-verdeCielo: #067672;
+    --color-texto-azul: #2446de;
+    --color-texto-blanco: #fff;
+    --color-texto-azulpastel: #13436d;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/*master CSS ends*/
+/*advantages*/
+.advantages{
+    margin-bottom: 5rem;
+    padding: 5rem
+}
+
+.advantages__grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.advantages__grid__row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages__grid__row__item{
+    width: 30rem;
+    height: 30rem;
+    border-style: outset;
+    border-color: rgb(160, 49, 175);
+    border-radius: 1rem;
+    margin: .5rem;
+    padding: 1.5rem;
+}
+.ag1 h3{
+    font-family: 'Pacifico', cursive;
+    font-size: 3.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color:#39cac5;
+}
+.ag2png:hover{
+    transform: rotateY(180deg);
+}
+
+.ag3::first-letter {
+    font-size: 150%;
+    color: #e4595b;
+}
+.ag3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color:var(--color-texto-azulpastel);
+    text-align: center;
+}
+
+.ag5 {
+    background-color: #000;
+    font-size: 2.2rem;
+    text-shadow: #13436d;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(45deg, red, orange, rgb(197, 197, 21), green, blue, indigo);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    
+}
+.ag6png:hover{
+    cursor: pointer;
+    transform: matrix3d(5);
+    }
+.ag7::first-letter {
+    font-size: 150%;
+    color: #e4595b;
+}
+.ag7{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: #13436d;
+    text-align: center;
+    font-weight: 500;
+}
+.ag7 .advantages__grid__row__item__text{
+    margin-top: 1.5rem;
+
+}
+.ag8png:hover {
+    transform: rotate(180deg);
+}
+.ag9::first-letter {
+    font-size: 150%;
+    color: #e4595b;
+}
+.ag9{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.7rem;
+    color: #13436d;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 6.5rem;
+}       
+/*advantages ends*/
+/*Gallery*/
+.gallery__section {
+    background: rgb(104, 6, 118);
+    background: linear-gradient(309deg, rgba(104, 6, 118, 0.38699229691876746) 40%, rgba(254, 187, 92, 0.7791491596638656) 100%);
+    width: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 2.5rem;
+}
+.gallery__title{
+    margin-bottom: 1.2rem;
+    margin-top: 3.5rem;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 0px 1px 7px rgba(104, 6, 118, 0.38699229691876746) 20%;
+    font-size: 8.0rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    }
+
+.gallery__grid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery__grid__row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.gallery__grid__row__item {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    border-radius: 1.5rem;
+}
+/*------Gallery ends------*/
+
+/*------ Reviews--------*/
+.review__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.review__title{
+     margin-bottom: 1.2rem;
+     margin-top: 3.5rem;
+     font-family: 'Luckiest Guy', cursive;
+     text-shadow: 0px 1px 7px rgba(104, 6, 118, 0.38699229691876746) 80%;
+     font-size: 8.0rem;
+     display: flex;
+     justify-content: center;
+     color: var(--color-text-verdeCielo);
+
+}
+.review .slick_parent {
+    width: 50rem;
+    margin:5rem 0rem;
+}
+
+.review .slick_parent .review__slide{
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem #3337;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:3rem 1.5rem;
+    padding: 2rem;
+}
+.review__slide__user{
+    position: relative;
+}
+.review__slide__user:before{
+    position: absolute;
+    content: "\f10e";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    right: 3rem;
+    color: #fe5c60;
+    font-size: 16rem;
+}
+.review .review__box .review__slide .review__slide__user .review__slide__user__pic{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+
+}
+.review__slide__user__info__name{
+   color: var(--color-texto-azulpastel);
+   font-size: 3.0rem; 
+   font-family: 'Pacifico', italic;
+   margin: 1.5rem, 0rem;
+}
+.review__slide__stars{
+    color: var(--color-texto-azul);
+    font-size: 1.5rem;
+}
+.review__slide__user__text{
+    color:var(--color-texto-azulpastel);
+    font-size: 2rem;
+    font-style: oblique;
+    font-family: 'Roboto', italic;
+    
+}
+/*-------Reviews ends----*/
+/*-----responsive-------*/
+@media screen and (max-width:768px) {
+    body{
+        background: violet;
+    }
+    .container{
+        max-width: 748px;
+
+    }
+    .advantages__grid__row,
+    .gallery__grid__row{
+        flex-wrap: wrap;
+    }
+        .review .slick_parent {
+            width: 80%;
+            margin: 1.2rem 0rem;
+        }
+}
+@media screen and (max-width:480px) {
+    body{
+        background: yellow;
+    }
+    .container {
+        max-width: 460px;
+    }
+}       

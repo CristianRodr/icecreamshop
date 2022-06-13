@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icecreamshop</title>
+    <!--normaliza CSS below-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--prettier-->
+    <link href="css/prettierrc.json">
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--icons-->
+    <script src="https://kit.fontawesome.com/c3feb2fb01.js" crossorigin="anonymous"></script>
+    <!--sliderstylesheets-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>   
+        $(document).ready(function () {
+            //starts slick js lib
+            $('.slick_parent').slick({
+                dots:true,
+                arrows:true             
+            });
+         });
+    </script>
+</head>
+
+<body>
+    <!--advantages-->
+    <div class="advantages__section">
+        <section class="advantages container">
+            <h3 hidden class="advantages__title">advantages</h3>
+            <div class="advantages__grid">
+                <div class="advantages__grid__row ar1">
+                    <div class="advantages__grid__row__item ag1">
+                        <h3 class="advantages__grid__row__item__title">
+                            <strong>De Granja<br> A Cono!</strong>
+                        </h3>
+                    </div>
+                    <div class="advantages__grid__row__item ag2">
+                        <img  class="ag2png" src="/pngicon/cow.png" alt="moo" width="100%" height="100%" />
+                    </div>
+                    <div class="advantages__grid__row__item ag3">
+                        <p class="advantages__grid__row__item__text">
+                            Creando nuestros helados usando productos lacteos de granjas locales!
+                            Asegurandonos de servir helados frescos y redueciendo nuestra Huella de carbono.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="advantages__grid__row ar2">
+                    <div class="advantages__grid__row__item ag4">
+                        <img class="ag4png" src="/pngicon/lgbtq.png" alt="heart" width="100%" height="100%"/>
+                    </div>
+                    <div class="advantages__grid__row__item ag5">
+                        <p><strong>Celebra Pride con Nosotros!</strong><br>
+                    Descubre En Nuestros Locales Descuentos Para Toda Personas Apoyando A La Comunidad LGBTQIA+ En El Mes De Junio.</p>
+                    </div>
+                    <div class="advantages__grid__row__item ag6">
+                        <img class="ag6png" src="/pngicon/rainbow-flag.png" alt="flag" widht="100%" height="100%"/>
+                    </div>
+                </div>
+                
+                <div class="advantages__grid__row ar3">
+                    <div class="advantages__grid__row__item ag7">
+                        <p class="advantages__grid__row__item__text">
+                        Utilizamos Exclusivamente Contenedores y Utencilios Biodegradables Hechos de Material Reciclados</p>
+                    </div>
+                    <div class="advantages__grid__row__item ag8">
+                        <img class="ag8png" src="/pngicon/biodegradable.png" alt="dontpanicitsorganic" width="100%" height="100%">
+                    </div>
+                    <div class="advantages__grid__row__item ag9">
+                    Reusamos Lecheras<br> de Metal Eliminando<br> El Desperdicio <br>PLastico Inesesario.
+                    </div>
+                </div>
+            </div><!--end advantages__grid-->
+        </section>
+    </div><!--end advantages__section-->
+    <!--Gallery-->
+    <div class="gallery__section">
+        <section class="container">
+            <h2 class="gallery__title">Gallery</h2>
+            <div class="gallery__grid">
+                <div class="gallery__grid__row">
+                    <img class="gallery__grid__row__item" src="imgallery/img1 (1).jpg" alt="top left (1)" />
+                    <img class="gallery__grid__row__item" src="imgallery/img2 (1).jpg" alt="top middle (2)" />
+                    <img class="gallery__grid__row__item" src="imgallery/img 3. (1).jpg" alt="top right (3)">
+                </div>
+                <div class="gallery__grid__row">
+                    <img class="gallery__grid__row__item" src="imgallery/img4 (1).jpg" alt="2nd f/top left (4)" />
+                    <img class="gallery__grid__row__item" src="imgallery/img5.jpg" alt="2nd f/top middle (5)" />
+                </div>
+                <div class="gallery__grid__row">
+                    <img class="gallery__grid__row__item" src="imgallery/img6.jpg" alt="3rd f/top  left (6)" />
+                    <img class="gallery__grid__row__item" src="imgallery/img7.jpg" alt="3rd f/top middle (7)" />
+                    <img class="gallery__grid__row__item" src="imgallery/img8.jpg" alt="3rd f/top right (8)" />
+                </div>
+            </div>
+        </section>
+    </div><!--end Gallery-->
+    <!--reviews-->
+
+    <div class="review__section">
+        <section class="review container">
+            <!--review#1-->
+            <div class="review__box container">
+                <h2 class="review__title">Reviews</h2>
+                <div class="slick_parent">
+                    <div class="review__slide">
+                        <div class="review__slide__user">
+                            <img  class="review__slide__user__pic" src="imgreviews/reviewpic2.jpg" alt="img1"/>
+                            <div class="review__slide__user__info">
+                                <h3 class="review__slide__user__info__name">John Doe</h3>
+                            </div>
+                            <div class="review__slide__stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="review__slide__user__text">Excellentes productos. Me encanta el hecho que es una empresa conciente con el medio ambiente! desde contenedores reciclados hasta las cucharas biodegradables! </p>
+                        </div>
+                    </div><!--ends review__slide 1-->
+
+                    <div class="review__slide">
+                        <div class="review__slide__user">
+                            <img class="review__slide__user__pic" src="imgreviews/reviewpic1.jpg" alt="img1" />
+                            <div class="review__slide__user__info">
+                                <h3 class="review__slide__user__info__name">John Doe</h3>
+                                <div class="review__slide__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                
+                            </div>
+                            <p class="review__slide__user__text">Excellentes productos. Me encanta el hecho que es una empresa conciente
+                                con el medio ambiente! desde contenedores reciclados hasta las cucharas biodegradables! </p>
+                        </div>
+                    </div><!--end review__slide 2-->
+
+                    <div class="review__slide">
+                        <div class="review__slide__user">
+                            <img class="review__slide__user__pic" src="imgreviews/reviewpic3.jpg" alt="img1" />
+                            <div class="review__slide__user__info">
+                                <h3 class="review__slide__user__info__name">John Doe</h3>
+                                <div class="review__slide__stars"> 
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                
+                            </div>
+                            <p class="review__slide__user__text">Excellentes productos. Me encanta el hecho que es una empresa conciente
+                                con el medio ambiente! desde contenedores reciclados hasta las cucharas biodegradables! </p>
+                        </div>
+                    </div><!--end review__slide 3-->
+                </div><!--ends slick parent (full slider)-->
+            </div>
+        </section>
+    </div><!--reviews end-->
+
+</body>
+</html>
