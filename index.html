@@ -9,15 +9,31 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!--icons-->
+        <script src="https://kit.fontawesome.com/c3feb2fb01.js" crossorigin="anonymous"></script>
+        <!--sliderstylesheets-->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                //starts slick js lib
+                $('.slick_parent').slick({
+                    dots: true,
+                    arrows: true
+                });
+            });
+        </script>
     </head>
 
     <body>
-
-        <!-- ---------------------------------------------------->
-        <!-- Inicio de encabezado HEROHEADER -->
+        <!--------------------CRISTIAN RODRIGUEZ----------------->
+        <!------------------------------------------------------->
+        <!-----------Inicio de encabezado HEROHEADER------------->
         <!------------------------------------------------------->
 
-        <header class="hero">
+        <header class="hero" id="ICE CREAM">
 
             <div class="hero__fixed">
                 <section class="message">
@@ -33,7 +49,7 @@
                         <figure class="nav__logo">
                             <svg class="nav__icon">
                                 <use xlink:href="img\logo.svg#icon-tencentqq"></use>
-                            </svg><span class="nav__logo--name">ICE CREAM</span>
+                            </svg><a href="#ICE CREAM" class="nav__logo--name">ICE CREAM</a>
                         </figure>
 
                         <label for="menu" class="nav__label">
@@ -42,10 +58,10 @@
                         <input type="checkbox" id="menu" class="nav__input">
 
                         <div class="nav__links">
-                            <a href="#" class="nav__link">Advantages</a>
-                            <a href="#" class="nav__link">Gallery</a>
-                            <a href="#" class="nav__link">Customer Reviews</a>
-                            <a href="#" class="nav__link">Contacts</a>
+                            <a href="#Advantages" class="nav__link">Advantages</a>
+                            <a href="#Gallery" class="nav__link">Gallery</a>
+                            <a href="#Customer Reviews" class="nav__link">Customer Reviews</a>
+                            <a href="#Contacts" class="nav__link">Contacts</a>
                             <a href="#" class="nav__link nav__link--modal">Buy now</a>
                         </div>
                     </section>
@@ -53,15 +69,45 @@
                     <div class="modal-container">
                         <div class="modal modal-close">
                             <p class="close">X</p>
-                            <div class="modal-textos">
-                                <h2>Get premium</h2>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing.
+                            <div class="modal__formulario">
+                                <p class="modal__parafrafo modal--titulo">
+                                    Deje sus datos, nos contactaremos con usted
                                 </p>
+                                <form action="">
+                                    <label class="modal__label">
+                                        <p class="modal__parafrafo">Nombre</p>
+                                        <input type="text" class="modal__input" name="Nombre" placeholder="&#xf007">
+                                    </label>
+                                    <label class="modal__label">
+                                        <p class="modal__parafrafo">Teléfono</p>
+                                        <input type="tel" class="modal__input" name="phone" placeholder="&#xf095"
+                                            pattern="[0-9]{3}" required>
+                                    </label>
+                                    <label class="modal__label">
+                                        <p class="modal__parafrafo">E-mail</p>
+                                        <input type="email" class="modal__input" name="email" placeholder="&#xf0e0">
+                                    </label>
+                                    <label class="modal__label modal__label--ancho">
+                                        <p class="modal__parafrafo">Comentarios</p>
+                                        <textarea name="Comentarios" class="modal__inputComentario" cols="30" rows="5"
+                                            placeholder="Introduzca el texto"></textarea>
+                                    </label>
+                                    <label class="modal__labelBoletin">
+                                        <input class="checkbox__boletin" type="checkbox" name="boletin" value="datos">
+                                        <p class="modal__parafrafo">
+                                            Estoy de acuerdo con el tratamiento de datos y acepto
+                                            los <br> Términos y
+                                            Condiciones
+                                        </p>
+                                    </label>
+
+                                    <button class="modal__formularioButton" type="submit">Enviar</button>
+                                </form>
                             </div>
                         </div>
                     </div>
-                </nav>
+            </div>
+            </nav>
             </div>
 
             <section class="hero__container">
@@ -69,7 +115,7 @@
                     <div class="hero__texts">
                         <div class="hero__title">
                             <h1 class="hero__title--modificador">Ice Cream Made With Passion</h1>
-                            <p class="hero__paragrafo">No es más feliz el que más tiene <br> sino el que mas helados come.
+                            <p class="hero__paragrafo">"No es más feliz el que más tiene <br> sino el que mas helados come"
                             </p>
                         </div>
                         <div class="hero__cta">
@@ -213,11 +259,27 @@
                             espesa pero no pegajosa que se siente decadente pero no pesado. Para algo un poco más ligero, se usa más leche y menos crema, siempre que los lácteos sumen 3 tazas. Se reduce las yemas de huevo para una base más delgada. <br><br>                            Sabores como brownie contienen fudge brownies horneados desde cero, la chispa de chocolate contiene remolinos de chocolate negro derretido y las nueces para mantequilla de nuez están recién tostadas. Para la mayor cantidad
                             posible de sus ingredientes, Ice cream se asocia con agricultores locales y tostadores de café.
                         </p>
-                        <a href="#" class="made__cta">Read more</a>
+                        <a href="#target" class="made__cta">Read more</a>
                     </div>
                     <div class="made__box made_box--img">
                         <figure class="made__figure"><img src="img\imgVacaCuatro.png" class="made__img"></figure>
                     </div>
+
+                    <section class="modall" id="target">
+                        <div class="modall__container">
+                            <a href="#" class="modall__close">X</a>
+
+                            <img src="undraw_before_dawn_re_hp4m.svg" class="modall__img">
+
+                            <div class="modall__texts">
+                                <h2 class="modall__title">Hacer las paces con la naturaleza</h2>
+                                <p class="modall__paragraph">Somos una compañía socialmente responsable en la cual valoramos la protección del medio ambiente.
+                                </p>
+                                <a href="#" class="ccta">Entra Aquí</a>
+                            </div>
+                        </div>
+                    </section>
+
 
                     <!------------------------------------------------------->
 
@@ -239,11 +301,297 @@
             <!-- Fin How it’s made -->
             <!------------------------------------------------------->
 
+            <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+            <!-------------------THOMAS EDUARDO---------------------->
+            <!------------------------------------------------------->
+
+            <!----------------------advantages----------------------->
+            <div class="advantages__section" id="Advantages">
+                <section class="advantages container">
+                    <h3 hidden class="advantages__title">advantages</h3>
+                    <div class="advantages__grid">
+                        <div class="advantages__grid__row ar1">
+                            <div class="advantages__grid__row__item ag1">
+                                <h3 class="advantages__grid__row__item__title">
+                                    <strong>De Granja<br> A Cono!</strong>
+                                </h3>
+                            </div>
+                            <div class="advantages__grid__row__item ag2">
+                                <img class="ag2png" src="/pngicon/cow.png" alt="moo" width="100%" height="100%" />
+                            </div>
+                            <div class="advantages__grid__row__item ag3">
+                                <p class="advantages__grid__row__item__text">
+                                    Creando nuestros helados usando productos lacteos de granjas locales! Asegurandonos de servir helados frescos y redueciendo nuestra Huella de carbono.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="advantages__grid__row ar2">
+                            <div class="advantages__grid__row__item ag4">
+                                <img class="ag4png" src="/pngicon/lgbtq.png" alt="heart" width="100%" height="100%" />
+                            </div>
+                            <div class="advantages__grid__row__item ag5">
+                                <p><strong>Celebra Pride con Nosotros!</strong><br> Descubre En Nuestros Locales Descuentos Para Toda Personas Apoyando A La Comunidad LGBTQIA+ En El Mes De Junio.
+                                </p>
+                            </div>
+                            <div class="advantages__grid__row__item ag6">
+                                <img class="ag6png" src="/pngicon/rainbow-flag.png" alt="flag" widht="100%" height="100%" />
+                            </div>
+                        </div>
+
+                        <div class="advantages__grid__row ar3">
+                            <div class="advantages__grid__row__item ag7">
+                                <p class="advantages__grid__row__item__text">
+                                    Utilizamos Exclusivamente Contenedores y Utencilios Biodegradables Hechos de Material Reciclados
+                                </p>
+                            </div>
+                            <div class="advantages__grid__row__item ag8">
+                                <img class="ag8png" src="/pngicon/biodegradable.png" alt="dontpanicitsorganic" width="100%" height="100%">
+                            </div>
+                            <div class="advantages__grid__row__item ag9">
+                                Reusamos Lecheras<br> de Metal Eliminando<br> El Desperdicio <br>PLastico Inesesario.
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------------------------------->
+                    <!----------------end advantages__grid------------------->
+                    <!------------------------------------------------------->
+                    <!---->
+                </section>
+            </div>
+            <!--end advantages__section-->
+            <!----------------------------Gallery----------------------------->
+            <!---------------------------------------------------------------->
+            <div class="gallery__section" id="Gallery">
+                <section class="container">
+                    <h2 class="gallery__title">Gallery</h2>
+                    <div class="gallery__grid">
+                        <div class="gallery__grid__row">
+                            <!-- <img class="gallery__grid__row__item" src="imgallery/img1 (1).jpg" alt="top left (1)" /> -->
+                            <img class="gallery__grid__row__item" src="imgallery/img2 (1).jpg" alt="top middle (2)" />
+                            <!-- <img class="gallery__grid__row__item" src="imgallery/img 3. (1).jpg" alt="top right (3)"> -->
+                        </div>
+                        <div class="gallery__grid__row">
+                            <img class="gallery__grid__row__item" src="imgallery/img4 (1).jpg" alt="2nd f/top left (4)" />
+                            <img class="gallery__grid__row__item" src="imgallery/img5.jpg" alt="2nd f/top middle (5)" />
+                        </div>
+                        <div class="gallery__grid__row">
+                            <img class="gallery__grid__row__item" src="imgallery/img6.jpg" alt="3rd f/top  left (6)" />
+                            <img class="gallery__grid__row__item" src="imgallery/img7.jpg" alt="3rd f/top middle (7)" />
+                            <img class="gallery__grid__row__item" src="imgallery/img8.jpg" alt="3rd f/top right (8)" />
+                        </div>
+                    </div>
+                    <div class="gallery__grid">
+                        <div class="gallery__grid__row">
+                            <img class="gallery__grid__row__item" src="imgallery/img14 (2).jpg" alt="top left (1)" />
+                            <img class="gallery__grid__row__item" src="imgallery/img18.jpg" alt="top middle (2)" />
+                            <img class="gallery__grid__row__item" src="imgallery/img11.jpg" alt="top right (3)">
+                        </div>
+                        <div class="gallery__grid__row">
+                            <img class="gallery__grid__row__item" src="imgallery/img16.jpg" alt="2nd f/top left (4)" />
+                            <img class="gallery__grid__row__item" src="imgallery/img12.jpg" alt="2nd f/top middle (5)" />
+                        </div>
+                        <div class="gallery__grid__row">
+                            <img class="gallery__grid__row__item" src="imgallery/img20.jpg" alt="3rd f/top  left (6)" />
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            <!---------------------------end Gallery-------------------------------->
+            <!---------------------------------------------------------------------->
+            <!-----------------------------reviews---------------------------------->
+
+            <div class="review__section" id="Customer Reviews">
+                <section class="review container">
+                    <!--review#1-->
+                    <div class="review__box container">
+                        <h2 class="review__title">Reviews</h2>
+                        <div class="slick_parent">
+                            <div class="review__slide">
+                                <div class="review__slide__user">
+                                    <img class="review__slide__user__pic" src="imgreviews/reviewpic2.jpg" alt="img1" />
+                                    <div class="review__slide__user__info">
+                                        <h3 class="review__slide__user__info__name">John Doe</h3>
+                                    </div>
+                                    <div class="review__slide__stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <p class="review__slide__user__text">Excellentes productos. Me encanta el hecho que es una empresa conciente con el medio ambiente! desde contenedores reciclados hasta las cucharas biodegradables! </p>
+                                </div>
+                            </div>
+                            <!----------------------ends review__slide 1---------------------------->
+                            <!---------------------------------------------------------------------->
+
+                            <div class="review__slide">
+                                <div class="review__slide__user">
+                                    <img class="review__slide__user__pic" src="imgreviews/reviewpic1.jpg" alt="img1" />
+                                    <div class="review__slide__user__info">
+                                        <h3 class="review__slide__user__info__name">John Doe</h3>
+                                        <div class="review__slide__stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+
+                                    </div>
+                                    <p class="review__slide__user__text">Excellentes productos. Me encanta el hecho que es una empresa conciente con el medio ambiente! desde contenedores reciclados hasta las cucharas biodegradables!
+                                    </p>
+                                </div>
+                            </div>
+                            <!----------------------end review__slide 2----------------------------->
+                            <!---------------------------------------------------------------------->
+
+                            <div class="review__slide">
+                                <div class="review__slide__user">
+                                    <img class="review__slide__user__pic" src="imgreviews/reviewpic3.jpg" alt="img1" />
+                                    <div class="review__slide__user__info">
+                                        <h3 class="review__slide__user__info__name">John Doe</h3>
+                                        <div class="review__slide__stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+
+                                    </div>
+                                    <p class="review__slide__user__text">Excellentes productos. Me encanta el hecho que es una empresa conciente con el medio ambiente! desde contenedores reciclados hasta las cucharas biodegradables!
+                                    </p>
+                                </div>
+                            </div>
+                            <!--end review__slide 3-->
+                        </div>
+                        <!--ends slick parent (full slider)-->
+                    </div>
+                </section>
+            </div>
+            <!-------------------------------reviews end---------------------------->
+            <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+            <!---------------------------------------------------------------------->
+            <!--___________________________BRENDA_________________________________-->
+            <!---------------------------------------------------------------------->
+
+            <div class="background-c" id="Contacts">
+                <div class="bg-c container">
+                    <!--Contacts-->
+                    <header hidden>
+                        Contacts for Icecream shop
+                    </header>
+
+                    <span class="title-c">
+                        Visit us!
+                    </span>
+
+                    <!--Lista de direcciones de la empresa (son 4)-->
+                    <span>
+                        <address>
+                            2569 3rd St, San Francisco, CA 94107, Estados Unidos
+                        </address>
+
+                        <address>
+                            9777 Golf Links Rd, Oakland, CA 94605, Estados Unidos
+                        </address>
+
+                        <address>
+                            1900 Seaport Blvd, Redwood City, CA 94063, Estados Unidos
+                        </address>
+
+                        <address>
+                            1 Hacker Way, Menlo Park, CA 94025, Estados Unidos
+                        </address>
 
 
+                    </span>
+                    <!--Telefono y correo electronico-->
+                    <div><span class="title-c">Get in touch with us!</span></div>
+                    <div class="cnt">
+                        <img src="images/phone-call-svgrepo-com.svg" class="icon" />
+                        <span>
+                            <a class="link-c" href="tel:+526641234567">+526641234567</a>
+                        </span>
+                    </div>
+
+
+                    <!--Siguiente parte de cont-->
+                    <div class="cnt">
+                        <svg class="icon" width="32px" height="32px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330.001 330.001" style="enable-background:new 0 0 330.001 330.001;" xml:space="preserve">
+                            <g id="XMLID_348_">
+                                <path id="XMLID_350_"
+                                    d="M173.871,177.097c-2.641,1.936-5.756,2.903-8.87,2.903c-3.116,0-6.23-0.967-8.871-2.903L30,84.602
+                                L0.001,62.603L0,275.001c0.001,8.284,6.716,15,15,15L315.001,290c8.285,0,15-6.716,15-14.999V62.602l-30.001,22L173.871,177.097z" />
+                                <polygon id="XMLID_351_" points="165.001,146.4 310.087,40.001 19.911,40 	" />
+                            </g>
+                        </svg>
+                        <span>
+                            <a class="link-c" href="mailto: icecream@gmail.com">icecream@gmail.com</a>
+
+                        </span>
+                    </div>
+
+                    <!--Botones-->
+                    <div>
+                        <span class="button-lft">
+                            <button class="button-c" type="button"
+                                onclick="window.location.href='https://www.google.com.mx/maps/search/best+ice+cream+in+the+world/@32.4554727,-116.9405297,12z/data=!3m1!4b1';">
+                                Our locations</button>
+                        </span>
+
+                        <span>
+                            <button class="button-c" type="button"
+                                onclick="window.location.href='https://www.google.com.mx/maps/search/best+ice+cream+in+the+world/@32.4554727,-116.9405297,12z/data=!3m1!4b1';">
+                                Our Franchises</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
         </main>
 
-        <footer>
+        <footer class="footer-bg">
+            <div class="f-bg container">
+                <div class="title-c">
+                    <span>
+                        Find us online!
+                    </span>
+                </div>
+                <!--EJEMPLO DE SVG con ruta en lugar de codigo-->
+                <div class="cnt">
+                    <img src="images/instagram-svgrepo-com.svg" class="icon" />
+
+                    <a class="link-f" href="https://instagram.com">Instagram</a>
+
+                </div>
+
+                <div class="cnt">
+                    <img src="images/facebook-svgrepo-com.svg" class="icon" />
+
+                    <a class="link-f" href="https://facebook.com">Facebook</a>
+                </div>
+
+                <div class="cnt">
+                    <img src="images/pinterest-svgrepo-com.svg" class="icon" />
+                    <a class="link-f" href="https://pinterest.com">Pinterest</a>
+                </div>
+
+                <div class="t-top">
+                    <span class="title-c">
+                        Call us!
+                    </span>
+                </div>
+
+                <div class="cnt">
+                    <span>
+                        <a class="link-f" href="tel:+52664989342030">+52 664 989 34 20 30</a>
+                    </span>
+                </div>
+
+            </div>
 
         </footer>
     </body>
